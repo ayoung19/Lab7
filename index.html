@@ -139,6 +139,8 @@
           recordForm.style.display = "block";
           recordIDcontainer.style.display = "none";
           output.innerHTML = "";
+          author.value = "";
+          title.value = "";
         } else if (command == "submit") {
           fetch(endpoint.value, {
             method: 'POST',
@@ -171,6 +173,8 @@
           recordForm.style.display = "block";
           recordIDcontainer.style.display = "block";
           output.innerHTML = "";
+          author.value = "";
+          title.value = "";
         } else if (command == "submit") {
           fetch(`${endpoint.value}/${recordID.value}`, {
             method: 'PUT',
